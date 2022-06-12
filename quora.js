@@ -22,7 +22,7 @@
    */
   function delAnswers()
   {
-    const answers = document.querySelectorAll('div.q-box.qu-borderBottom');
+    const answers = document.querySelectorAll('div div.q-box.qu-borderAll.qu-borderRadius--small');
 
     Array.prototype.map.call(answers, function(answer) {
       // 表示されているコメントのみ対象
@@ -51,7 +51,7 @@
    */
   function delComments()
   {
-    const comments = document.querySelectorAll('div div.q-box div.q-box.qu-borderTop');
+    const comments = document.querySelectorAll('div.q-box div.q-box.qu-px--medium.qu-pt--small');
 
     Array.prototype.map.call(comments, function(comment) {
       // 表示されているコメントのみ対象
